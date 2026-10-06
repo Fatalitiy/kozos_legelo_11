@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+nav {
+    flex: 1 1 100%;
+    background-color: pink;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    background-color: rgb(255, 0, 43);
+}
+
+article {
+    flex: 1 1 auto;
+    background-color: green;
+}
+
+aside {
+    flex: 0 0 200px;
+    background-color: aliceblue;
+}
+
+footer {
+    flex: 1 1 100%;
+    background-color: beige;
+}
+
+@media (max-width: 600px) {
+    aside {
+    flex: 1 1 100%;
+    background-color: aliceblue;
+    }
+
+}

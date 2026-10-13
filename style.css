@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -8,17 +9,16 @@ main {
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1000px;
-
 }
 
 .cim {
     font-weight: bold;
     color: rgb(0, 0, 0);
-    background-color: bisque ;
+    background-color: rgb(219, 230, 214);
 }
 
 body {
-    background-color: bisque;
+    background-color: rgb(219, 230, 214);
 }
 
 img {
@@ -27,7 +27,7 @@ img {
 
 nav {
     flex: 1 1 100%;
-    background-color: bisque;
+    background-color: rgb(219, 230, 214);
     text-align: center;
     border-radius: 10px;
 }
@@ -56,6 +56,18 @@ nav {
 
 .nav2 div {
     flex: 1 1 200px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.nav2 div:hover {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    background-color: rgb(154, 214, 157);
+    border-radius: 5px;
 }
 
 a {
@@ -72,7 +84,7 @@ a {
     background-color: black;
     border-radius: 20px;
 }
-
+/*  */
 header {
     display: flex;
     flex-direction: row;
@@ -95,6 +107,15 @@ header {
     border: solid 2px  rgb(50, 136, 42);;
 }
 
+.header-item2 h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.header-item2 p {
+    font-size: 20px;
+}
+
 .header-item1 h1, .header-item1 p, .header-item2 p, .header-item2 h2{
     color: white;
 }
@@ -102,25 +123,70 @@ header {
 
 article {
     flex: 1 1 auto;
-    background-color: green;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    border: solid 1px rgb(116, 116, 116);
+    margin: 10px;
+    padding: 10px;
 }
 
-.artCunci {
+.TehenBG {
+    background: linear-gradient(
+        to bottom,
+        #d9efea 0%,
+        #d9efea 50%,
+        #b3d58e 50%,
+        #b3d58e 100%
+      );
+      min-height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+}
+
+.artTehenek {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.artTehenek img {
+    max-width: 70px;
+}
+
+.artDobozok {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
 }
 
-.artCunci div {
+.artDobozok div {
     flex: 1 1 200px;
+    background-color: #d1dfc2;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.artDobozok p, .artDobozok h2 {
+    margin: 10px;
 }
 
 .artPat {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #dfc2a7;
+    border-radius: 10px;
+    border-left: solid 4px rgb(172, 0, 0);
 }
 
 .artPat p {
@@ -128,19 +194,50 @@ article {
 }
 
 aside {
-    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 0 0 250px;
+    align-self: self-start;
+    background-color: rgb(241, 245, 239);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+aside .sec1 {
+    flex: 0 0 auto;
     background-color: aliceblue;
+    border-radius: 10px;
+    border-left: solid 2px rgb(12, 138, 12) ;
+    margin: 5px;
+    padding: 5px;
+}
+
+aside .sec2 {
+    flex: 0 0 auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border-left: solid 2px rgb(12, 138, 12) ;
+    margin: 5px;
+    padding: 5px;
 }
 
 footer {
     flex: 1 1 100%;
-    background-color: beige;
+    background-color: rgb(219, 230, 214);
 }
 
-@media (max-width: 600px) {
+footer .p1 {
+    border-bottom: 1px solid grey;
+}
+
+@media (max-width: 1020px) {
     aside {
     flex: 1 1 100%;
-    background-color: aliceblue;
+    background-color: rgb(241, 245, 239);
+    display: flex;
+    flex-wrap: wrap;
     }
 
 }
